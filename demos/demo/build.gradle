@@ -47,6 +47,17 @@ android {
     lintOptions {
         abortOnError false
     }
+    testOptions {
+        unitTests {
+            includeAndroidResources = true
+            all {
+                jvmArgs '-noverify'
+            }
+        }
+
+        unitTests.returnDefaultValues = true
+    }
+
     compileOptions {
         sourceCompatibility JavaVersion.VERSION_1_8
         targetCompatibility JavaVersion.VERSION_1_8
@@ -65,4 +76,17 @@ dependencies {
     if (withAutotrack) {
         implementation project(":demo-autotrack")
     }
+
+
+    testImplementation "org.mockito:mockito-core:$mockitoCore"
+    testImplementation "org.powermock:powermock-api-mockito2:$powermockApiMockito2"
+    testImplementation "org.powermock:powermock-module-junit4:$powermockModuleJunit4"
+    testImplementation "org.powermock:powermock-module-junit4-rule:$powermockModuleJunit4"
+    testImplementation "org.powermock:powermock-classloading-xstream:$powermockModuleJunit4"
+    testImplementation "com.google.truth:truth:$truth"
+
+    testImplementation "org.robolectric:robolectric:$robolectric"
+    testImplementation "androidx.test:runner:$xTest"
+    testImplementation "androidx.test:core:$xTest"
+    testImplementation "androidx.test.ext:junit:$xTestExt"
 }

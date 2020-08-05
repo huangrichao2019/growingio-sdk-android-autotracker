@@ -1,0 +1,54 @@
+{
+  "splashs": [],
+  "popupWindows": [{
+    "id": 6651,
+    "state": "activated",
+    "name": "弹窗20191107213602",
+    "platform": "app",
+    "content": "https://statics.growingio.com/pages/20191107/1175/1573133833651/1573133833651-popupWindow.html?url_scheme=growing.f23ddf93461ed0ed",
+    "priority": 1,
+    "index": 0,
+    "updateAt": 1573133833741,
+    "rule": {
+      "type": "system",
+      "action": "appOpen",
+      "target": "",
+      "endAt": 4102416000000,
+      "startAt": 1573133762920,
+      "triggerPages": [],
+      "triggerCd": 86400,
+      "triggerDelay": 0,
+      "limit": 1,
+      "filters": {
+        "expr": "",
+        "exprs": []
+      },
+      "triggerFilter": {
+        "conditionExpr": "a",
+        "conditions": [{
+          "type": "event",
+          "alias": "a",
+          "key": "appOpen",
+          "measurementType": "system",
+          "aggregator": "count",
+          "op": ">",
+          "valueType": "int",
+          "values": [0],
+          "attribute": "",
+          "dimFiltersOp": "",
+          "dimFilters": []
+        }]
+      }
+    },
+    "abTest": {
+      "dimension": "",
+      "symbol": "",
+      "ctrlGroup": false
+    }
+  }],
+  "banners": [],
+  "idMappings": {
+    "bu": 611,
+    "bcs": 0
+  }
+}
