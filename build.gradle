@@ -2,6 +2,20 @@
 
 buildscript {
     ext {
+        mockitoCore = '2.23.0'
+        powermockApiMockito2 = '2.0.2'
+        powermockModuleJunit4 = '2.0.2'
+        orgJson = '2.0'
+        jacocoAndroid = '0.1.4'
+        sonarqube = '2.8'
+        junit = '4.12'
+        truth = '1.0'
+        robolectric = '4.3.1'
+        xTest = '1.2.0'
+        xTestExt = '1.1.1'
+        jsoup = '1.12.1'
+        extentReports = '4.0.0'
+
         buildConfiguration = [
                 compileVersion     : 29,
                 minSdkVersion      : 17,

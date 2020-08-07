@@ -23,6 +23,7 @@ import android.content.pm.PackageManager;
 import android.content.pm.ResolveInfo;
 import android.os.AsyncTask;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -105,6 +106,8 @@ public class MainActivity extends ListActivity {
                 viewHolder.mTextView.setText(entry.value());
             } catch (ClassNotFoundException e) {
                 throw new RuntimeException(e);
+            } catch (NullPointerException e) {
+                Log.e("demos",e.getMessage());
             }
             return convertView;
         }

@@ -47,5 +47,7 @@ public class ThreeVersionApplication extends Application {
                         .setProjectId("testProjectId")
                         .setUrlScheme("testUrlScheme")
                         .setLogEnabled(true));
+
     }
+
 }
