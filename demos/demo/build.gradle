@@ -19,7 +19,9 @@ buildscript {
 
 android {
     compileSdkVersion buildConfiguration.compileVersion
+
     defaultConfig {
+        "android.support.test.runner.AndroidJUnitRunner"
         applicationId "com.gio.test.three"
         minSdkVersion buildConfiguration.minSdkVersion
         targetSdkVersion buildConfiguration.targetSdkVersion
@@ -77,6 +79,9 @@ dependencies {
         implementation project(":demo-autotrack")
     }
 
+    androidTestImplementation 'com.android.support.test:runner:1.0.2'
+    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
+    androidTestImplementation 'com.android.support.test:rules:1.0.2'
 
     testImplementation "org.mockito:mockito-core:$mockitoCore"
     testImplementation "org.powermock:powermock-api-mockito2:$powermockApiMockito2"
